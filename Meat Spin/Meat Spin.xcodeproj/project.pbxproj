@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E61F026202E069000A81C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61F025202E069000A81C7A /* AppDelegate.swift */; };
+		1E61F028202E069000A81C7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61F027202E069000A81C7A /* ViewController.swift */; };
+		1E61F02B202E069000A81C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E61F029202E069000A81C7A /* Main.storyboard */; };
+		1E61F02D202E069000A81C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E61F02C202E069000A81C7A /* Assets.xcassets */; };
+		1E61F030202E069000A81C7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E61F02E202E069000A81C7A /* LaunchScreen.storyboard */; };
+		1E61F03B202E069100A81C7A /* Meat_SpinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61F03A202E069100A81C7A /* Meat_SpinTests.swift */; };
+		1E61F046202E069100A81C7A /* Meat_SpinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61F045202E069100A81C7A /* Meat_SpinUITests.swift */; };
+		1E61F04B202E069100A81C7A /* Meat Spin WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1E61F04A202E069100A81C7A /* Meat Spin WatchKit App.app */; };
+		1E61F051202E069100A81C7A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E61F04F202E069100A81C7A /* Interface.storyboard */; };
+		1E61F053202E069100A81C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E61F052202E069100A81C7A /* Assets.xcassets */; };
+		1E61F05A202E069100A81C7A /* Meat Spin WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E61F059202E069100A81C7A /* Meat Spin WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1E61F05F202E069100A81C7A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61F05E202E069100A81C7A /* InterfaceController.swift */; };
+		1E61F061202E069100A81C7A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61F060202E069100A81C7A /* ExtensionDelegate.swift */; };
+		1E61F063202E069100A81C7A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61F062202E069100A81C7A /* NotificationController.swift */; };
+		1E61F065202E069100A81C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E61F064202E069100A81C7A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E61F037202E069100A81C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E61F01A202E069000A81C7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E61F021202E069000A81C7A;
+			remoteInfo = "Meat Spin";
+		};
+		1E61F042202E069100A81C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E61F01A202E069000A81C7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E61F021202E069000A81C7A;
+			remoteInfo = "Meat Spin";
+		};
+		1E61F04C202E069100A81C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E61F01A202E069000A81C7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E61F049202E069100A81C7A;
+			remoteInfo = "Meat Spin WatchKit App";
+		};
+		1E61F05B202E069100A81C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E61F01A202E069000A81C7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E61F058202E069100A81C7A;
+			remoteInfo = "Meat Spin WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E61F06D202E069100A81C7A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1E61F05A202E069100A81C7A /* Meat Spin WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E61F071202E069100A81C7A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1E61F04B202E069100A81C7A /* Meat Spin WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E61F022202E069000A81C7A /* Meat Spin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meat Spin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E61F025202E069000A81C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E61F027202E069000A81C7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E61F02A202E069000A81C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E61F02C202E069000A81C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E61F02F202E069000A81C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E61F031202E069000A81C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E61F036202E069100A81C7A /* Meat SpinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meat SpinTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E61F03A202E069100A81C7A /* Meat_SpinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meat_SpinTests.swift; sourceTree = "<group>"; };
+		1E61F03C202E069100A81C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E61F041202E069100A81C7A /* Meat SpinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meat SpinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E61F045202E069100A81C7A /* Meat_SpinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meat_SpinUITests.swift; sourceTree = "<group>"; };
+		1E61F047202E069100A81C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E61F04A202E069100A81C7A /* Meat Spin WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meat Spin WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E61F050202E069100A81C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1E61F052202E069100A81C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E61F054202E069100A81C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E61F059202E069100A81C7A /* Meat Spin WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Meat Spin WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E61F05E202E069100A81C7A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1E61F060202E069100A81C7A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1E61F062202E069100A81C7A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1E61F064202E069100A81C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E61F066202E069100A81C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E61F067202E069100A81C7A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E61F01F202E069000A81C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E61F033202E069100A81C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E61F03E202E069100A81C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E61F056202E069100A81C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E61F019202E069000A81C7A = {
+			isa = PBXGroup;
+			children = (
+				1E61F024202E069000A81C7A /* Meat Spin */,
+				1E61F039202E069100A81C7A /* Meat SpinTests */,
+				1E61F044202E069100A81C7A /* Meat SpinUITests */,
+				1E61F04E202E069100A81C7A /* Meat Spin WatchKit App */,
+				1E61F05D202E069100A81C7A /* Meat Spin WatchKit Extension */,
+				1E61F023202E069000A81C7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E61F023202E069000A81C7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E61F022202E069000A81C7A /* Meat Spin.app */,
+				1E61F036202E069100A81C7A /* Meat SpinTests.xctest */,
+				1E61F041202E069100A81C7A /* Meat SpinUITests.xctest */,
+				1E61F04A202E069100A81C7A /* Meat Spin WatchKit App.app */,
+				1E61F059202E069100A81C7A /* Meat Spin WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E61F024202E069000A81C7A /* Meat Spin */ = {
+			isa = PBXGroup;
+			children = (
+				1E61F025202E069000A81C7A /* AppDelegate.swift */,
+				1E61F027202E069000A81C7A /* ViewController.swift */,
+				1E61F029202E069000A81C7A /* Main.storyboard */,
+				1E61F02C202E069000A81C7A /* Assets.xcassets */,
+				1E61F02E202E069000A81C7A /* LaunchScreen.storyboard */,
+				1E61F031202E069000A81C7A /* Info.plist */,
+			);
+			path = "Meat Spin";
+			sourceTree = "<group>";
+		};
+		1E61F039202E069100A81C7A /* Meat SpinTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E61F03A202E069100A81C7A /* Meat_SpinTests.swift */,
+				1E61F03C202E069100A81C7A /* Info.plist */,
+			);
+			path = "Meat SpinTests";
+			sourceTree = "<group>";
+		};
+		1E61F044202E069100A81C7A /* Meat SpinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E61F045202E069100A81C7A /* Meat_SpinUITests.swift */,
+				1E61F047202E069100A81C7A /* Info.plist */,
+			);
+			path = "Meat SpinUITests";
+			sourceTree = "<group>";
+		};
+		1E61F04E202E069100A81C7A /* Meat Spin WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1E61F04F202E069100A81C7A /* Interface.storyboard */,
+				1E61F052202E069100A81C7A /* Assets.xcassets */,
+				1E61F054202E069100A81C7A /* Info.plist */,
+			);
+			path = "Meat Spin WatchKit App";
+			sourceTree = "<group>";
+		};
+		1E61F05D202E069100A81C7A /* Meat Spin WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1E61F05E202E069100A81C7A /* InterfaceController.swift */,
+				1E61F060202E069100A81C7A /* ExtensionDelegate.swift */,
+				1E61F062202E069100A81C7A /* NotificationController.swift */,
+				1E61F064202E069100A81C7A /* Assets.xcassets */,
+				1E61F066202E069100A81C7A /* Info.plist */,
+				1E61F067202E069100A81C7A /* PushNotificationPayload.apns */,
+			);
+			path = "Meat Spin WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E61F021202E069000A81C7A /* Meat Spin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E61F072202E069100A81C7A /* Build configuration list for PBXNativeTarget "Meat Spin" */;
+			buildPhases = (
+				1E61F01E202E069000A81C7A /* Sources */,
+				1E61F01F202E069000A81C7A /* Frameworks */,
+				1E61F020202E069000A81C7A /* Resources */,
+				1E61F071202E069100A81C7A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E61F04D202E069100A81C7A /* PBXTargetDependency */,
+			);
+			name = "Meat Spin";
+			productName = "Meat Spin";
+			productReference = 1E61F022202E069000A81C7A /* Meat Spin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E61F035202E069100A81C7A /* Meat SpinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E61F075202E069100A81C7A /* Build configuration list for PBXNativeTarget "Meat SpinTests" */;
+			buildPhases = (
+				1E61F032202E069100A81C7A /* Sources */,
+				1E61F033202E069100A81C7A /* Frameworks */,
+				1E61F034202E069100A81C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E61F038202E069100A81C7A /* PBXTargetDependency */,
+			);
+			name = "Meat SpinTests";
+			productName = "Meat SpinTests";
+			productReference = 1E61F036202E069100A81C7A /* Meat SpinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E61F040202E069100A81C7A /* Meat SpinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E61F078202E069100A81C7A /* Build configuration list for PBXNativeTarget "Meat SpinUITests" */;
+			buildPhases = (
+				1E61F03D202E069100A81C7A /* Sources */,
+				1E61F03E202E069100A81C7A /* Frameworks */,
+				1E61F03F202E069100A81C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E61F043202E069100A81C7A /* PBXTargetDependency */,
+			);
+			name = "Meat SpinUITests";
+			productName = "Meat SpinUITests";
+			productReference = 1E61F041202E069100A81C7A /* Meat SpinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1E61F049202E069100A81C7A /* Meat Spin WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E61F06E202E069100A81C7A /* Build configuration list for PBXNativeTarget "Meat Spin WatchKit App" */;
+			buildPhases = (
+				1E61F048202E069100A81C7A /* Resources */,
+				1E61F06D202E069100A81C7A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E61F05C202E069100A81C7A /* PBXTargetDependency */,
+			);
+			name = "Meat Spin WatchKit App";
+			productName = "Meat Spin WatchKit App";
+			productReference = 1E61F04A202E069100A81C7A /* Meat Spin WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1E61F058202E069100A81C7A /* Meat Spin WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E61F06A202E069100A81C7A /* Build configuration list for PBXNativeTarget "Meat Spin WatchKit Extension" */;
+			buildPhases = (
+				1E61F055202E069100A81C7A /* Sources */,
+				1E61F056202E069100A81C7A /* Frameworks */,
+				1E61F057202E069100A81C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Meat Spin WatchKit Extension";
+			productName = "Meat Spin WatchKit Extension";
+			productReference = 1E61F059202E069100A81C7A /* Meat Spin WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E61F01A202E069000A81C7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "SWEN-356";
+				TargetAttributes = {
+					1E61F021202E069000A81C7A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1E61F035202E069100A81C7A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1E61F021202E069000A81C7A;
+					};
+					1E61F040202E069100A81C7A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1E61F021202E069000A81C7A;
+					};
+					1E61F049202E069100A81C7A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1E61F058202E069100A81C7A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1E61F01D202E069000A81C7A /* Build configuration list for PBXProject "Meat Spin" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E61F019202E069000A81C7A;
+			productRefGroup = 1E61F023202E069000A81C7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E61F021202E069000A81C7A /* Meat Spin */,
+				1E61F035202E069100A81C7A /* Meat SpinTests */,
+				1E61F040202E069100A81C7A /* Meat SpinUITests */,
+				1E61F049202E069100A81C7A /* Meat Spin WatchKit App */,
+				1E61F058202E069100A81C7A /* Meat Spin WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E61F020202E069000A81C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E61F030202E069000A81C7A /* LaunchScreen.storyboard in Resources */,
+				1E61F02D202E069000A81C7A /* Assets.xcassets in Resources */,
+				1E61F02B202E069000A81C7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E61F034202E069100A81C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E61F03F202E069100A81C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E61F048202E069100A81C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E61F053202E069100A81C7A /* Assets.xcassets in Resources */,
+				1E61F051202E069100A81C7A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E61F057202E069100A81C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E61F065202E069100A81C7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E61F01E202E069000A81C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E61F028202E069000A81C7A /* ViewController.swift in Sources */,
+				1E61F026202E069000A81C7A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E61F032202E069100A81C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E61F03B202E069100A81C7A /* Meat_SpinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E61F03D202E069100A81C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E61F046202E069100A81C7A /* Meat_SpinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E61F055202E069100A81C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E61F063202E069100A81C7A /* NotificationController.swift in Sources */,
+				1E61F061202E069100A81C7A /* ExtensionDelegate.swift in Sources */,
+				1E61F05F202E069100A81C7A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E61F038202E069100A81C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E61F021202E069000A81C7A /* Meat Spin */;
+			targetProxy = 1E61F037202E069100A81C7A /* PBXContainerItemProxy */;
+		};
+		1E61F043202E069100A81C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E61F021202E069000A81C7A /* Meat Spin */;
+			targetProxy = 1E61F042202E069100A81C7A /* PBXContainerItemProxy */;
+		};
+		1E61F04D202E069100A81C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E61F049202E069100A81C7A /* Meat Spin WatchKit App */;
+			targetProxy = 1E61F04C202E069100A81C7A /* PBXContainerItemProxy */;
+		};
+		1E61F05C202E069100A81C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E61F058202E069100A81C7A /* Meat Spin WatchKit Extension */;
+			targetProxy = 1E61F05B202E069100A81C7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E61F029202E069000A81C7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E61F02A202E069000A81C7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E61F02E202E069000A81C7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E61F02F202E069000A81C7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1E61F04F202E069100A81C7A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E61F050202E069100A81C7A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E61F068202E069100A81C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E61F069202E069100A81C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E61F06B202E069100A81C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				INFOPLIST_FILE = "Meat Spin WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		1E61F06C202E069100A81C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				INFOPLIST_FILE = "Meat Spin WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		1E61F06F202E069100A81C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				IBSC_MODULE = Meat_Spin_WatchKit_Extension;
+				INFOPLIST_FILE = "Meat Spin WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		1E61F070202E069100A81C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				IBSC_MODULE = Meat_Spin_WatchKit_Extension;
+				INFOPLIST_FILE = "Meat Spin WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		1E61F073202E069100A81C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				INFOPLIST_FILE = "Meat Spin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E61F074202E069100A81C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				INFOPLIST_FILE = "Meat Spin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E61F076202E069100A81C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				INFOPLIST_FILE = "Meat SpinTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-SpinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meat Spin.app/Meat Spin";
+			};
+			name = Debug;
+		};
+		1E61F077202E069100A81C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				INFOPLIST_FILE = "Meat SpinTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-SpinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meat Spin.app/Meat Spin";
+			};
+			name = Release;
+		};
+		1E61F079202E069100A81C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				INFOPLIST_FILE = "Meat SpinUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-SpinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Meat Spin";
+			};
+			name = Debug;
+		};
+		1E61F07A202E069100A81C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				INFOPLIST_FILE = "Meat SpinUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-SpinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Meat Spin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E61F01D202E069000A81C7A /* Build configuration list for PBXProject "Meat Spin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E61F068202E069100A81C7A /* Debug */,
+				1E61F069202E069100A81C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E61F06A202E069100A81C7A /* Build configuration list for PBXNativeTarget "Meat Spin WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E61F06B202E069100A81C7A /* Debug */,
+				1E61F06C202E069100A81C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E61F06E202E069100A81C7A /* Build configuration list for PBXNativeTarget "Meat Spin WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E61F06F202E069100A81C7A /* Debug */,
+				1E61F070202E069100A81C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E61F072202E069100A81C7A /* Build configuration list for PBXNativeTarget "Meat Spin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E61F073202E069100A81C7A /* Debug */,
+				1E61F074202E069100A81C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E61F075202E069100A81C7A /* Build configuration list for PBXNativeTarget "Meat SpinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E61F076202E069100A81C7A /* Debug */,
+				1E61F077202E069100A81C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E61F078202E069100A81C7A /* Build configuration list for PBXNativeTarget "Meat SpinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E61F079202E069100A81C7A /* Debug */,
+				1E61F07A202E069100A81C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E61F01A202E069000A81C7A /* Project object */;
+}
