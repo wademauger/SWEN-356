@@ -610,16 +610,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				DEVELOPMENT_TEAM = 32PJ4GMCMU;
 				INFOPLIST_FILE = "Meat Spin WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "Super-Meat-Spin.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -628,16 +628,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				DEVELOPMENT_TEAM = 32PJ4GMCMU;
 				INFOPLIST_FILE = "Meat Spin WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "Super-Meat-Spin.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -647,16 +647,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				DEVELOPMENT_TEAM = 32PJ4GMCMU;
 				IBSC_MODULE = Meat_Spin_WatchKit_Extension;
 				INFOPLIST_FILE = "Meat Spin WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "Super-Meat-Spin.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -666,16 +666,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				DEVELOPMENT_TEAM = 32PJ4GMCMU;
 				IBSC_MODULE = Meat_Spin_WatchKit_Extension;
 				INFOPLIST_FILE = "Meat Spin WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "Super-Meat-Spin.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -683,12 +683,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				DEVELOPMENT_TEAM = 32PJ4GMCMU;
 				INFOPLIST_FILE = "Meat Spin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin";
+				PRODUCT_BUNDLE_IDENTIFIER = "Super-Meat-Spin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -698,12 +701,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				DEVELOPMENT_TEAM = 32PJ4GMCMU;
 				INFOPLIST_FILE = "Meat Spin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-Spin";
+				PRODUCT_BUNDLE_IDENTIFIER = "Super-Meat-Spin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -715,10 +721,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				DEVELOPMENT_TEAM = 32PJ4GMCMU;
 				INFOPLIST_FILE = "Meat SpinTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-SpinTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Super-Meat-Spin.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -732,10 +739,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				DEVELOPMENT_TEAM = 32PJ4GMCMU;
 				INFOPLIST_FILE = "Meat SpinTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-SpinTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Super-Meat-Spin.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -748,8 +756,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				DEVELOPMENT_TEAM = 32PJ4GMCMU;
 				INFOPLIST_FILE = "Meat SpinUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-SpinUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -764,8 +773,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84TVW3GD4C;
+				DEVELOPMENT_TEAM = 32PJ4GMCMU;
 				INFOPLIST_FILE = "Meat SpinUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SWEN-356.Meat-SpinUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
