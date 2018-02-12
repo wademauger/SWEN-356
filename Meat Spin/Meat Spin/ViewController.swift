@@ -8,6 +8,9 @@
 
 import UIKit
 
+// Comment your name below when you get xcode to build and run!
+// Dan Sweetman
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
