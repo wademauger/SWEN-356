@@ -10,6 +10,7 @@ import UIKit
 
 // Comment your name below when you get xcode to build and run!
 // Dan Sweetman
+// Matthew Vogt
 
 class ViewController: UIViewController {
 
