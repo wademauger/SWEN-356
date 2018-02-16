@@ -17,6 +17,10 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
     }
     
+    @IBAction func wasSwiped(_ sender: Any) {
+        count += 1
+        counter.setText(String(count))
+    }
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()

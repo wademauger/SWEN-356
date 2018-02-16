@@ -19,7 +19,15 @@
                                 <action selector="clicked" destination="AgC-eL-Hgc" id="qqM-J7-xI1"/>
                             </connections>
                         </button>
-                        <label width="136" height="59" alignment="center" text="0" textAlignment="center" id="fVT-0G-LC8"/>
+                        <label width="136" height="59" alignment="center" text="0" textAlignment="center" id="fVT-0G-LC8">
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer id="SDk-zh-1pb">
+                                    <connections>
+                                        <action selector="wasSwiped:" destination="AgC-eL-Hgc" id="u7C-nN-6VU"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                            </gestureRecognizers>
+                        </label>
                         <button width="1" alignment="left" title="Button" id="lB9-Ue-W61">
                             <connections>
                                 <segue destination="p2d-V7-MsM" kind="push" id="jQQ-19-xut"/>
