@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 // Comment your name below when you get xcode to build and run!
 // Dan Sweetman
@@ -15,12 +16,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Use function when testing
+        sendChickenDoneNotification();
+    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func sendChickenDoneNotification(){
+        let content = UNMutableNotificationContent()
+        content.title = "Congrats you've got a done chicken!"
+        content.body = "Tap to view more"
+        content.sound = UNNotificationSound.default()
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "DoneChicken", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
 
 
