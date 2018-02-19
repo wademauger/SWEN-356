@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //Use function when testing
-        sendChickenDoneNotification();
+        //sendNotification(title:"Chicken is done", body:"Tap to view more", time:5.0);
     
     }
 
@@ -27,13 +27,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func sendChickenDoneNotification(){
+    /**
+        Sends a notification after a specified amount of time
+     
+        @param title Title of notification
+        @param body Body of notification
+        @param time Specified time for notification to trigger
+     
+    */
+    func sendNotification(title: String, body: String, time: Double){
         let content = UNMutableNotificationContent()
-        content.title = "Congrats you've got a done chicken!"
-        content.body = "Tap to view more"
+        content.title = title
+        content.body = body
         content.sound = UNNotificationSound.default()
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: time, repeats: false)
         
         let request = UNNotificationRequest(identifier: "DoneChicken", content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
