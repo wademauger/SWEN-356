@@ -9,17 +9,20 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
-
+    @IBOutlet var chickenImg: WKInterfaceImage!
+    var chickenImageStateMachine: ChickenImageStateMachine?
+    
     override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-        
         // Configure interface objects here.
+        super.awake(withContext: context)
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        if (self.chickenImageStateMachine == nil) {
+            self.chickenImageStateMachine = ChickenImageStateMachine(chickenImg: self.chickenImg)
+        }
         super.willActivate()
     }
     

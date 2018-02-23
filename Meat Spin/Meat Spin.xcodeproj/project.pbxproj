@@ -22,6 +22,7 @@
 		1E61F061202E069100A81C7A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61F060202E069100A81C7A /* ExtensionDelegate.swift */; };
 		1E61F063202E069100A81C7A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61F062202E069100A81C7A /* NotificationController.swift */; };
 		1E61F065202E069100A81C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E61F064202E069100A81C7A /* Assets.xcassets */; };
+		3134E66520376A32001FF3C9 /* ChickenImageStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134E66420376A32001FF3C9 /* ChickenImageStateMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		1E61F064202E069100A81C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E61F066202E069100A81C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E61F067202E069100A81C7A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3134E66420376A32001FF3C9 /* ChickenImageStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenImageStateMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 				1E61F064202E069100A81C7A /* Assets.xcassets */,
 				1E61F066202E069100A81C7A /* Info.plist */,
 				1E61F067202E069100A81C7A /* PushNotificationPayload.apns */,
+				3134E66420376A32001FF3C9 /* ChickenImageStateMachine.swift */,
 			);
 			path = "Meat Spin WatchKit Extension";
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				1E61F063202E069100A81C7A /* NotificationController.swift in Sources */,
 				1E61F061202E069100A81C7A /* ExtensionDelegate.swift in Sources */,
 				1E61F05F202E069100A81C7A /* InterfaceController.swift in Sources */,
+				3134E66520376A32001FF3C9 /* ChickenImageStateMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
