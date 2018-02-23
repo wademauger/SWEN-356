@@ -11,6 +11,8 @@ import UserNotifications
 
 // Comment your name below when you get xcode to build and run!
 // Dan Sweetman
+// Matthew Vogt
+// Arshdeep Khalsa
 
 class ViewController: UIViewController {
 
@@ -19,7 +21,6 @@ class ViewController: UIViewController {
         
         //Use function when testing
         //sendNotification(title:"Chicken is done", body:"Tap to view more", time:5.0);
-    
     }
 
     override func didReceiveMemoryWarning() {
