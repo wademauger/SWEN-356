@@ -12,12 +12,17 @@ import Foundation
 class InterfaceController: WKInterfaceController {
     @IBOutlet var chickenImg: WKInterfaceImage!
     var chickenImageStateMachine: ChickenImageStateMachine?
-    
+    var count = 0
+
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         super.awake(withContext: context)
     }
     
+    @IBAction func wasSwiped(_ sender: Any) {
+        count += 1
+        counter.setText(String(count))
+    }
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         if (self.chickenImageStateMachine == nil) {
@@ -25,10 +30,18 @@ class InterfaceController: WKInterfaceController {
         }
         super.willActivate()
     }
+    @IBOutlet var counter: WKInterfaceLabel!
+    @IBOutlet var PointButton: WKInterfaceButton!
+    
+    @IBAction func clicked() {
+        count += 1
+        counter.setText(String(count))
+    }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
 
 }

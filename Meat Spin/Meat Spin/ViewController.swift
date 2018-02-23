@@ -10,11 +10,13 @@ import UIKit
 
 // Comment your name below when you get xcode to build and run!
 // Dan Sweetman
+// Matthew Vogt
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
