@@ -11,6 +11,8 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet var chickenImg: WKInterfaceImage!
+    @IBOutlet var counter: WKInterfaceLabel!
+
     var chickenImageStateMachine: ChickenImageStateMachine?
     var count = 0
 
@@ -19,23 +21,25 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
     }
     
-    @IBAction func wasSwiped(_ sender: Any) {
+    func onSwiped() {
         count += 1
         counter.setText(String(count))
     }
+    
+    @IBAction func wasSwipedUp(_ sender: Any) {
+        onSwiped()
+    }
+    
+    @IBAction func wasSwipedDown(_ sender: Any) {
+        onSwiped()
+    }
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         if (self.chickenImageStateMachine == nil) {
             self.chickenImageStateMachine = ChickenImageStateMachine(chickenImg: self.chickenImg)
         }
         super.willActivate()
-    }
-    @IBOutlet var counter: WKInterfaceLabel!
-    @IBOutlet var PointButton: WKInterfaceButton!
-    
-    @IBAction func clicked() {
-        count += 1
-        counter.setText(String(count))
     }
     
     override func didDeactivate() {
