@@ -18,8 +18,11 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
         super.awake(withContext: context)
     }
-    
-    @IBAction func wasSwiped(_ sender: Any) {
+    @IBAction func wasSwipedUp(_ sender: Any) {
+        count += 1
+        counter.setText(String(count))
+    }
+    @IBAction func wasSwipedDown(_ sender: Any) {
         count += 1
         counter.setText(String(count))
     }
