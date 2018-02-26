@@ -11,6 +11,8 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet var chickenImg: WKInterfaceImage!
+    @IBOutlet var counter: WKInterfaceLabel!
+
     var chickenImageStateMachine: ChickenImageStateMachine?
     var count = 0
 
@@ -39,13 +41,6 @@ class InterfaceController: WKInterfaceController {
         }
         super.willActivate()
     }
-    
-   @IBOutlet var counter: WKInterfaceLabel!
-    
-   // @IBAction func clicked() {
-   //     count += 1
-   //     counter.setText(String(count))
-   // }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
