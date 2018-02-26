@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -14,6 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Meat_Spin_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <label alignment="left" text="Label" id="Cgy-R6-11D"/>
                         <imageView height="100" alignment="left" contentMode="scaleAspectFill" id="gSz-2h-YoM">
                             <gestureRecognizers>
                                 <swipeGestureRecognizer direction="4" id="SB1-iO-4VL">
@@ -31,6 +32,7 @@
                     </items>
                     <connections>
                         <outlet property="chickenImg" destination="gSz-2h-YoM" id="5SB-ip-9Xc"/>
+                        <outlet property="counter" destination="Cgy-R6-11D" id="3SS-z7-NJo"/>
                     </connections>
                 </controller>
             </objects>

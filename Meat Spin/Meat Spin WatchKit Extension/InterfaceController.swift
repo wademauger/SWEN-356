@@ -18,14 +18,20 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
         super.awake(withContext: context)
     }
+    
+    func onSwiped() {
+        count += 1
+        counter.setText(String(count))
+    }
+    
     @IBAction func wasSwipedUp(_ sender: Any) {
-        count += 1
-        counter.setText(String(count))
+        onSwiped()
     }
+    
     @IBAction func wasSwipedDown(_ sender: Any) {
-        count += 1
-        counter.setText(String(count))
+        onSwiped()
     }
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         if (self.chickenImageStateMachine == nil) {
@@ -33,13 +39,13 @@ class InterfaceController: WKInterfaceController {
         }
         super.willActivate()
     }
-    @IBOutlet var counter: WKInterfaceLabel!
-    @IBOutlet var PointButton: WKInterfaceButton!
     
-    @IBAction func clicked() {
-        count += 1
-        counter.setText(String(count))
-    }
+   @IBOutlet var counter: WKInterfaceLabel!
+    
+   // @IBAction func clicked() {
+   //     count += 1
+   //     counter.setText(String(count))
+   // }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
