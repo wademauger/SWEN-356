@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,6 +29,11 @@
                                 </swipeGestureRecognizer>
                             </gestureRecognizers>
                         </imageView>
+                        <button width="1" alignment="left" title="Upgrades" id="KQY-NU-m6A">
+                            <connections>
+                                <segue destination="p2d-V7-MsM" kind="push" id="ike-cB-eAf"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="chickenImg" destination="gSz-2h-YoM" id="5SB-ip-9Xc"/>
@@ -38,10 +43,43 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Upgrade Menu-->
         <scene sceneID="dAM-vg-kJu">
             <objects>
-                <controller id="p2d-V7-MsM"/>
+                <controller identifier="Upgrades" title="Upgrade Menu" id="p2d-V7-MsM" customClass="UpgradeInterfaceController" customModule="Meat_Spin_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="qb3-BH-uYN">
+                            <items>
+                                <tableRow identifier="UpgradeRow" id="Kjt-pi-pZO">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="DMb-To-A0V">
+                                        <items>
+                                            <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="feg-Bb-e01">
+                                                <color key="color" red="0.0" green="0.093641497320862577" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </separator>
+                                            <group alignment="left" layout="vertical" spacing="0.0" id="PF6-cI-qqF">
+                                                <items>
+                                                    <group width="1" height="32" alignment="left" spacing="4" id="OwE-dS-Qfy">
+                                                        <items>
+                                                            <label width="20" alignment="left" verticalAlignment="center" text="U" id="7h4-gm-VPy">
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                                            </label>
+                                                            <label width="85" alignment="right" verticalAlignment="center" text="Descrip." id="iSy-HO-SZm">
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="upgradesTable" destination="qb3-BH-uYN" id="czb-4q-clc"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="453" y="345"/>
         </scene>
