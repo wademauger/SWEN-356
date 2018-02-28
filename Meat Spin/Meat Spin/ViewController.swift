@@ -13,6 +13,7 @@ import UserNotifications
 // Dan Sweetman
 // Matthew Vogt
 // Arshdeep Khalsa
+// Wade Mauger
 
 class ViewController: UIViewController {
 
