@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01DFC78F20471619006535FF /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DFC78E20471619006535FF /* GameEngine.swift */; };
 		1E61F026202E069000A81C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61F025202E069000A81C7A /* AppDelegate.swift */; };
 		1E61F028202E069000A81C7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61F027202E069000A81C7A /* ViewController.swift */; };
 		1E61F02B202E069000A81C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E61F029202E069000A81C7A /* Main.storyboard */; };
@@ -82,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01DFC78E20471619006535FF /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
 		1E61F022202E069000A81C7A /* Meat Spin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meat Spin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E61F025202E069000A81C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E61F027202E069000A81C7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				1E61F066202E069100A81C7A /* Info.plist */,
 				1E61F067202E069100A81C7A /* PushNotificationPayload.apns */,
 				3134E66420376A32001FF3C9 /* ChickenImageStateMachine.swift */,
+				01DFC78E20471619006535FF /* GameEngine.swift */,
 			);
 			path = "Meat Spin WatchKit Extension";
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DFC78F20471619006535FF /* GameEngine.swift in Sources */,
 				1E61F063202E069100A81C7A /* NotificationController.swift in Sources */,
 				1E61F061202E069100A81C7A /* ExtensionDelegate.swift in Sources */,
 				1E61F05F202E069100A81C7A /* InterfaceController.swift in Sources */,
