@@ -15,15 +15,24 @@ class InterfaceController: WKInterfaceController {
 
     var chickenImageStateMachine: ChickenImageStateMachine?
     var count = 0
+    var chickenCount = 1
 
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         super.awake(withContext: context)
     }
     
+    func increaseChickenCount(){
+            chickenCount+=1
+    }
+    
+    func setChickenCount(newCount : Int){
+        chickenCount = newCount
+    }
+    
     func onSwiped() {
-        count += 1
-        counter.setText(String(count))
+        count += chickenCount*1
+        counter.setText(String(count)+" C:"+String(chickenCount))
     }
     
     @IBAction func wasSwipedUp(_ sender: Any) {
