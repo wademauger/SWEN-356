@@ -29,6 +29,11 @@
                                 </swipeGestureRecognizer>
                             </gestureRecognizers>
                         </imageView>
+                        <button width="40" alignment="left" title="[S]" id="bhP-yI-XRJ">
+                            <connections>
+                                <segue destination="mrh-Tq-rlw" kind="push" id="e8u-L7-UsN"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="chickenImg" destination="gSz-2h-YoM" id="5SB-ip-9Xc"/>
@@ -38,12 +43,31 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
+        <!--Score Board Controller-->
+        <scene sceneID="NjK-ws-Miz">
+            <objects>
+                <controller id="mrh-Tq-rlw" customClass="ScoreBoardController" customModule="Meat_Spin_WatchKit_Extension">
+                    <items>
+                        <label width="94" height="20" alignment="left" text="High Scores" id="zve-y2-gju"/>
+                        <button width="1" alignment="left" title="Button" id="bSs-vv-Yen">
+                            <connections>
+                                <action selector="getScores" destination="mrh-Tq-rlw" id="GGI-NF-QzU"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="topLabel" destination="zve-y2-gju" id="jMK-Ef-vaC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="456" y="352"/>
+        </scene>
         <!--Interface Controller-->
         <scene sceneID="dAM-vg-kJu">
             <objects>
                 <controller id="p2d-V7-MsM"/>
             </objects>
-            <point key="canvasLocation" x="453" y="345"/>
+            <point key="canvasLocation" x="692" y="352"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
