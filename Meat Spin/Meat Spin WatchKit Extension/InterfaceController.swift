@@ -14,6 +14,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var counter: WKInterfaceLabel!
 
     var chickenImageStateMachine: ChickenImageStateMachine?
+    var swipeEngine: SwipeEngine?
     var count = 0
 
     override func awake(withContext context: Any?) {
@@ -21,17 +22,14 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
     }
     
-    func onSwiped() {
-        count += 1
-        counter.setText(String(count))
-    }
-    
     @IBAction func wasSwipedUp(_ sender: Any) {
-        onSwiped()
+        count += swipeEngine!.onSwiped()
+        counter.setText("\(count)")
     }
     
     @IBAction func wasSwipedDown(_ sender: Any) {
-        onSwiped()
+        count += swipeEngine!.onSwiped()
+        counter.setText("\(count)")
     }
     
     override func willActivate() {
@@ -40,6 +38,7 @@ class InterfaceController: WKInterfaceController {
             self.chickenImageStateMachine = ChickenImageStateMachine(chickenImg: self.chickenImg)
         }
         super.willActivate()
+        counter.setText("\(count)")
     }
     
     override func didDeactivate() {

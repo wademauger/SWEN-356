@@ -21,9 +21,12 @@ class ChickenImageStateMachine: NSObject {
         #imageLiteral(resourceName: "side-view-3"),
         #imageLiteral(resourceName: "bottom-view")
     ]
+    //access to Swipe Engine
+    var swipeEngine: SwipeEngine?
     
     // velocity is the pace at which the chicken spins
     let velocity = 1.0
+    
     
     // If we figure out how to set the transparency of a png to a color,
     // we can show chicken "done-ness" with these values
