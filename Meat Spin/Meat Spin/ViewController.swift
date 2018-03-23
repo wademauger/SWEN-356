@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //Use function when testing
-        sendNotification(title:"Chicken is done", body:"Tap to view more", time:5.0);
+        //sendNotification(title:"Start spinning that chicken!", body:"Tap to view more", time:5.0);
     }
 
     override func didReceiveMemoryWarning() {

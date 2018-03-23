@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Meat_Spin_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Label" id="Cgy-R6-11D"/>
+                        <label alignment="left" text="0" id="Cgy-R6-11D"/>
                         <imageView height="100" alignment="left" contentMode="scaleAspectFill" id="gSz-2h-YoM">
                             <gestureRecognizers>
                                 <swipeGestureRecognizer direction="4" id="SB1-iO-4VL">
