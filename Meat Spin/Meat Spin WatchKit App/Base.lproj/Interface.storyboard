@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -29,6 +29,11 @@
                                 </swipeGestureRecognizer>
                             </gestureRecognizers>
                         </imageView>
+                        <button width="1" alignment="left" title="U P G R A D E S" id="dIq-Po-asV">
+                            <connections>
+                                <segue destination="NTo-xX-w6t" kind="modal" id="se8-D4-agX"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="chickenImg" destination="gSz-2h-YoM" id="5SB-ip-9Xc"/>
@@ -38,12 +43,48 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Interface Controller-->
-        <scene sceneID="dAM-vg-kJu">
+        <!--Upgrades Interface Controller-->
+        <scene sceneID="dJe-Jn-VvG">
             <objects>
-                <controller id="p2d-V7-MsM"/>
+                <controller id="NTo-xX-w6t" customClass="UpgradesInterfaceController" customModule="Meat_Spin_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="Qes-2k-KsX">
+                            <items>
+                                <tableRow identifier="UpgradesRowController" id="IIY-fH-8xW" customClass="UpgradesRowController" customModule="Meat_Spin_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="8Oy-KJ-EXw">
+                                        <items>
+                                            <group width="1" alignment="left" id="Yda-hZ-E0V">
+                                                <items>
+                                                    <label width="1" height="21" alignment="left" verticalAlignment="center" text="Name" id="lpm-Tm-522">
+                                                        <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <separator alignment="left" id="LN5-Xt-alk"/>
+                                            <group width="1" alignment="left" id="6Qg-zG-fx5">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="COST:" id="uV0-9e-VNH"/>
+                                                    <label alignment="left" verticalAlignment="center" text="Cost" id="j3A-g5-4dB"/>
+                                                    <imageView width="41" alignment="right" verticalAlignment="center" id="V5K-5b-en5"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="UpgradeBuyImage" destination="V5K-5b-en5" id="wnS-f2-g1y"/>
+                                        <outlet property="UpgradeCostLabel" destination="j3A-g5-4dB" id="HVC-XU-Smk"/>
+                                        <outlet property="UpgradeNameLabel" destination="lpm-Tm-522" id="d8G-4c-mnK"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="TableElement" destination="Qes-2k-KsX" id="iL8-ip-oyv"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="453" y="345"/>
+            <point key="canvasLocation" x="467.28205128205133" y="336.94871794871796"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
